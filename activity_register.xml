@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="28dp">
+
+        <!-- ================= SECURITY ICON ================= -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textSize="45sp"
+            android:gravity="center" />
+
+
+        <!-- ================= TITLE ================= -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="CREATE ACCOUNT"
+            android:textColor="#071B3A"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.05"
+            android:gravity="center" />
+
+
+        <!-- ================= SUBTITLE ================= -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Join SecureStegoX and protect your data"
+            android:textColor="#315B91"
+            android:textSize="13sp"
+            android:gravity="center" />
+
+
+        <!-- ================= ACCENT LINE ================= -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <View
+                android:layout_width="28dp"
+                android:layout_height="2dp"
+                android:background="#6B4CFF" />
+
+            <View
+                android:layout_width="45dp"
+                android:layout_height="4dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="#1677FF" />
+
+            <View
+                android:layout_width="28dp"
+                android:layout_height="2dp"
+                android:background="#6B4CFF" />
+
+        </LinearLayout>
+
+
+        <!-- ================= REGISTER CARD ================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:background="#EAF7FBFF"
+            android:elevation="10dp"
+            android:orientation="vertical"
+            android:padding="23dp">
+
+
+            <!-- ================= FULL NAME ================= -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FULL NAME"
+                android:textColor="#173F70"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etFullName"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="7dp"
+                android:background="#DDEBFA"
+                android:hint="Enter your full name"
+                android:inputType="textPersonName"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="#071B3A"
+                android:textColorHint="#6F89AA"
+                android:textSize="14sp"
+                android:singleLine="true" />
+
+
+            <!-- ================= USERNAME ================= -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="USERNAME"
+                android:textColor="#173F70"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="7dp"
+                android:background="#DDEBFA"
+                android:hint="Choose a username"
+                android:inputType="text"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="#071B3A"
+                android:textColorHint="#6F89AA"
+                android:textSize="14sp"
+                android:singleLine="true" />
+
+
+            <!-- ================= EMAIL ================= -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="EMAIL ADDRESS"
+                android:textColor="#173F70"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="7dp"
+                android:background="#DDEBFA"
+                android:hint="Enter your email"
+                android:inputType="textEmailAddress"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="#071B3A"
+                android:textColorHint="#6F89AA"
+                android:textSize="14sp"
+                android:singleLine="true" />
+
+
+            <!-- ================= PASSWORD ================= -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="PASSWORD"
+                android:textColor="#173F70"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="7dp"
+                android:background="#DDEBFA"
+                android:hint="Create a password"
+                android:inputType="textPassword"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="#071B3A"
+                android:textColorHint="#6F89AA"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:drawableEnd="@android:drawable/ic_menu_view"
+                android:drawablePadding="10dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+
+            <!-- ================= CREATE ACCOUNT ================= -->
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#145FE8"
+                android:text="✓  CREATE ACCOUNT"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:elevation="5dp" />
+
+
+            <!-- ================= BACK TO LOGIN ================= -->
+
+            <TextView
+                android:id="@+id/tvBackToLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:text="Already have an account?  LOGIN"
+                android:textColor="#145FE8"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:focusable="true" />
+
+        </LinearLayout>
+
+
+        <!-- ================= SECURITY MESSAGE ================= -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:gravity="center"
+            android:text="Secure account  •  Protected access"
+            android:textColor="#041A38"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:shadowColor="#FFFFFF"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="3" />
+
+
+        <!-- ================= TRUST LINE ================= -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:text="SECURITY  •  PRIVACY  •  TRUST"
+            android:textColor="#092B57"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.12"
+            android:gravity="center"
+            android:shadowColor="#FFFFFF"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="3" />
+
+    </LinearLayout>
+
+</ScrollView>

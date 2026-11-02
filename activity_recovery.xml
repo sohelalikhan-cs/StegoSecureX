@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingStart="22dp"
+        android:paddingEnd="22dp"
+        android:paddingTop="55dp"
+        android:paddingBottom="30dp">
+
+        <!-- ================= HEADER ================= -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SECURESTEGOX"
+            android:textColor="#03162F"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.18"
+            android:gravity="center"
+            android:shadowColor="#FFFFFF"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="4" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="SECRET KEY RECOVERY"
+            android:textColor="#02152E"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.03"
+            android:gravity="center"
+            android:shadowColor="#FFFFFF"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="4" />
+
+        <!-- ACCENT LINE -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <View
+                android:layout_width="25dp"
+                android:layout_height="2dp"
+                android:background="#5636D8" />
+
+            <View
+                android:layout_width="48dp"
+                android:layout_height="4dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="#0758C9" />
+
+            <View
+                android:layout_width="25dp"
+                android:layout_height="2dp"
+                android:background="#5636D8" />
+
+        </LinearLayout>
+
+        <!-- SUBTITLE -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:text="Recover and securely update your secret key"
+            android:textColor="#294F7D"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+
+        <!-- ================= MAIN CARD ================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="#F2F7FC"
+            android:elevation="10dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <!-- ================= ENCODED FILE ================= -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ENCODED FILE"
+                android:textColor="#102F57"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnSelectFile"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#145FE8"
+                android:elevation="4dp"
+                android:text="SELECT ENCODED FILE"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSelectedFile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="#DCE8F5"
+                android:padding="13dp"
+                android:text="No file selected"
+                android:textColor="#31547D"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+
+            <!-- ================= USERNAME ================= -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="USERNAME"
+                android:textColor="#102F57"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="8dp"
+                android:background="#DCE8F5"
+                android:hint="Enter username"
+                android:inputType="text"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="#092746"
+                android:textColorHint="#64809F"
+                android:textSize="14sp" />
+
+
+            <!-- ================= PASSWORD ================= -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="PASSWORD"
+                android:textColor="#102F57"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="8dp"
+                android:background="#DCE8F5"
+                android:hint="Enter password"
+                android:inputType="textPassword"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="#092746"
+                android:textColorHint="#64809F"
+                android:textSize="14sp" />
+
+
+            <!-- ================= NEW SECRET KEY ================= -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="NEW SECRET KEY"
+                android:textColor="#102F57"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etNewKey"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="8dp"
+                android:background="#DCE8F5"
+                android:hint="Enter new secret key"
+                android:inputType="textPassword"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="#092746"
+                android:textColorHint="#64809F"
+                android:textSize="14sp" />
+
+
+            <!-- ================= RECOVER BUTTON ================= -->
+
+            <Button
+                android:id="@+id/btnRecover"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="22dp"
+                android:backgroundTint="#1258D4"
+                android:elevation="5dp"
+                android:text="RECOVER &amp; UPDATE KEY"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <!-- ================= SECURITY NOTE ================= -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="Your new key will securely replace the existing key."
+                android:textColor="#456789"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+
+            <!-- ================= BACK ================= -->
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="19dp"
+                android:backgroundTint="#3F4FAF"
+                android:elevation="4dp"
+                android:text="BACK TO DASHBOARD"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <!-- ================= LOGOUT ================= -->
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="3dp"
+                android:backgroundTint="#D93636"
+                android:elevation="4dp"
+                android:text="LOGOUT"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F2F7FC"
+    android:elevation="6dp">
+
+    <!-- ================= OPERATION ================= -->
+
+    <TextView
+        android:id="@+id/tvOperation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ENCODE"
+        android:textColor="#1258D4"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <!-- ================= FILE NAME ================= -->
+
+    <TextView
+        android:id="@+id/tvFileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="File / Method: image.jpg"
+        android:textColor="#102F57"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <!-- ================= STATUS ================= -->
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Status: SUCCESS"
+        android:textColor="#087F72"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <!-- ================= DATE & TIME ================= -->
+
+    <TextView
+        android:id="@+id/tvDateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="18 Aug 2026 - 05:30 PM"
+        android:textColor="#52708F"
+        android:textSize="12sp" />
+
+</LinearLayout>

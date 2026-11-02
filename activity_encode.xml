@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingStart="22dp"
+        android:paddingEnd="22dp"
+        android:paddingTop="55dp"
+        android:paddingBottom="30dp">
+
+        <!-- ================= HEADER ================= -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SECURESTEGOX"
+            android:textColor="#03162F"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.18"
+            android:gravity="center"
+            android:shadowColor="#FFFFFF"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="4" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="ENCODE FILE"
+            android:textColor="#02152E"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.04"
+            android:gravity="center"
+            android:shadowColor="#FFFFFF"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="4" />
+
+        <!-- ================= ACCENT LINE ================= -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <View
+                android:layout_width="25dp"
+                android:layout_height="2dp"
+                android:background="#5636D8" />
+
+            <View
+                android:layout_width="48dp"
+                android:layout_height="4dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="#0758C9" />
+
+            <View
+                android:layout_width="25dp"
+                android:layout_height="2dp"
+                android:background="#5636D8" />
+
+        </LinearLayout>
+
+        <!-- ================= SUBTITLE ================= -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:text="Hide your data securely inside a carrier file"
+            android:textColor="#294F7D"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <!-- ================= MAIN CARD ================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="#F2F7FC"
+            android:elevation="10dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- ================= CARRIER FILE ================= -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CARRIER FILE"
+                android:textColor="#102F57"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnSelectCarrier"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#145FE8"
+                android:elevation="4dp"
+                android:text="SELECT CARRIER FILE"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCarrierFile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="#DCE8F5"
+                android:padding="13dp"
+                android:text="No carrier file selected"
+                android:textColor="#31547D"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <!-- ================= SECRET FILE ================= -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="SECRET FILE"
+                android:textColor="#102F57"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnSelectSecretFile"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#145FE8"
+                android:elevation="4dp"
+                android:text="SELECT SECRET FILE"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSecretFile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="#DCE8F5"
+                android:padding="13dp"
+                android:text="No secret file selected"
+                android:textColor="#31547D"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <!-- ================= OR ================= -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="2dp"
+                android:text="────────  OR  ────────"
+                android:textColor="#6F89AA"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <!-- ================= SECRET MESSAGE ================= -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="SECRET MESSAGE"
+                android:textColor="#102F57"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etMessage"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="8dp"
+                android:background="#DCE8F5"
+                android:hint="Enter message to hide"
+                android:inputType="text"
+                android:singleLine="true"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="#092746"
+                android:textColorHint="#64809F"
+                android:textSize="14sp"
+                android:drawableEnd="@android:drawable/ic_menu_view"
+                android:drawableTint="#31547D" />
+
+            <!-- ================= SECRET KEY ================= -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:text="SECRET KEY"
+                android:textColor="#102F57"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etSecretKey"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="8dp"
+                android:background="#DCE8F5"
+                android:hint="Enter secret key"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="#092746"
+                android:textColorHint="#64809F"
+                android:textSize="14sp"
+                android:drawableEnd="@android:drawable/ic_menu_view"
+                android:drawableTint="#31547D" />
+
+            <!-- ================= ENCODE ================= -->
+
+            <Button
+                android:id="@+id/btnEncode"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="22dp"
+                android:backgroundTint="#145FE8"
+                android:elevation="5dp"
+                android:text="ENCODE SECURELY&#10;&amp; SAVE"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <!-- ================= SHARE KEY ================= -->
+
+            <Button
+                android:id="@+id/btnShareKey"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#145FE8"
+                android:elevation="4dp"
+                android:text="SHARE KEY"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <!-- ================= BACK ================= -->
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="19dp"
+                android:backgroundTint="#6B4CFF"
+                android:elevation="4dp"
+                android:text="BACK TO DASHBOARD"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <!-- ================= LOGOUT ================= -->
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="3dp"
+                android:backgroundTint="#D93636"
+                android:elevation="4dp"
+                android:text="LOGOUT"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

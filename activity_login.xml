@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="28dp">
+
+        <!-- ================= SECURITY ICON ================= -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+            android:text="🔐"
+            android:textSize="42sp"
+            android:gravity="center" />
+
+        <!-- ================= APP NAME ================= -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="SECURESTEGOX"
+            android:textColor="#071B3A"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.06"
+            android:gravity="center" />
+
+        <!-- ================= DESCRIPTION ================= -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Secure Steganography &amp; Cryptography"
+            android:textColor="#315B91"
+            android:textSize="13sp"
+            android:gravity="center" />
+
+        <!-- ================= ACCENT LINE ================= -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <View
+                android:layout_width="28dp"
+                android:layout_height="2dp"
+                android:background="#6B4CFF" />
+
+            <View
+                android:layout_width="45dp"
+                android:layout_height="4dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="#1677FF" />
+
+            <View
+                android:layout_width="28dp"
+                android:layout_height="2dp"
+                android:background="#6B4CFF" />
+
+        </LinearLayout>
+
+        <!-- ================= LOGIN CARD ================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="#EAF7FB"
+            android:elevation="10dp"
+            android:orientation="vertical"
+            android:padding="23dp">
+
+            <!-- ================= CARD TITLE ================= -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WELCOME BACK"
+                android:textColor="#0A3270"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Login to continue securely"
+                android:textColor="#52729C"
+                android:textSize="13sp"
+                android:gravity="center" />
+
+            <!-- ================= USERNAME ================= -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:text="USERNAME"
+                android:textColor="#173F70"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="7dp"
+                android:background="#DDEBFA"
+                android:hint="Enter your username"
+                android:inputType="text"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="#071B3A"
+                android:textColorHint="#6F89AA"
+                android:textSize="14sp"
+                android:singleLine="true" />
+
+            <!-- ================= PASSWORD ================= -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:text="PASSWORD"
+                android:textColor="#173F70"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="7dp"
+                android:background="#DDEBFA"
+                android:hint="Enter your password"
+                android:inputType="textPassword"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="#071B3A"
+                android:textColorHint="#6F89AA"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:drawableEnd="@android:drawable/ic_menu_view"
+                android:drawablePadding="10dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <!-- ================= FORGOT PASSWORD ================= -->
+
+            <TextView
+                android:id="@+id/tvForgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="9dp"
+                android:text="Forgot Password?"
+                android:textColor="#145FE8"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <!-- ================= LOGIN BUTTON ================= -->
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="21dp"
+                android:backgroundTint="#145FE8"
+                android:elevation="5dp"
+                android:text="LOGIN SECURELY"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <!-- ================= DIVIDER ================= -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:text="────────  OR  ────────"
+                android:textColor="#7C95B5"
+                android:textSize="12sp"
+                android:gravity="center" />
+
+            <!-- ================= REGISTER ================= -->
+
+            <TextView
+                android:id="@+id/tvRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="New User?  CREATE ACCOUNT"
+                android:textColor="#145FE8"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:focusable="true" />
+
+        </LinearLayout>
+
+        <!-- ================= SECURITY MESSAGE ================= -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:text="Your credentials are protected by SecureStegoX"
+            android:textColor="#041A38"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:shadowColor="#FFFFFF"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="3" />
+
+        <!-- ================= BRANDING ================= -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="SECURITY  •  PRIVACY  •  TRUST"
+            android:textColor="#092B57"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.12"
+            android:gravity="center"
+            android:shadowColor="#FFFFFF"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="3" />
+
+    </LinearLayout>
+
+</ScrollView>

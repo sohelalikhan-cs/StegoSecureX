@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+  <!-- MAIN SCROLLABLE CONTENT -->
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_above="@id/btnLogout"
+      android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:paddingTop="100dp"
+        android:paddingBottom="32dp">
+
+      <!-- BRAND -->
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="SECURESTEGOX"
+          android:textColor="#03162F"
+          android:textSize="16sp"
+          android:textStyle="bold"
+          android:letterSpacing="0.18"
+          android:gravity="center"
+          android:shadowColor="#FFFFFF"
+          android:shadowDx="0"
+          android:shadowDy="1"
+          android:shadowRadius="4" />
+
+      <!-- DASHBOARD TITLE -->
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:text="DASHBOARD"
+          android:textColor="#02152E"
+          android:textSize="29sp"
+          android:textStyle="bold"
+          android:letterSpacing="0.05"
+          android:gravity="center"
+          android:shadowColor="#FFFFFF"
+          android:shadowDx="0"
+          android:shadowDy="1"
+          android:shadowRadius="4" />
+
+      <!-- ACCENT LINE -->
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="9dp"
+          android:orientation="horizontal"
+          android:gravity="center_vertical">
+
+        <View
+            android:layout_width="28dp"
+            android:layout_height="2dp"
+            android:background="#5636D8" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="4dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="#0758C9" />
+
+        <View
+            android:layout_width="28dp"
+            android:layout_height="2dp"
+            android:background="#5636D8" />
+
+      </LinearLayout>
+
+      <!-- WELCOME -->
+
+      <TextView
+          android:id="@+id/tvWelcome"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="12dp"
+          android:layout_marginBottom="20dp"
+          android:text="Welcome,User"
+          android:textColor="#0A315E"
+          android:textSize="15sp"
+          android:textStyle="bold"
+          android:gravity="center" />
+
+
+      <!-- ENCODE -->
+
+      <Button
+          android:id="@+id/btnEncode"
+          android:layout_width="match_parent"
+          android:layout_height="55dp"
+          android:layout_marginBottom="10dp"
+          android:backgroundTint="#145FE8"
+          android:elevation="5dp"
+          android:text="ENCODE"
+          android:textColor="#FFFFFF"
+          android:textSize="15sp"
+          android:textStyle="bold" />
+
+
+      <!-- DECODE -->
+
+      <Button
+          android:id="@+id/btnDecode"
+          android:layout_width="match_parent"
+          android:layout_height="55dp"
+          android:layout_marginBottom="10dp"
+          android:backgroundTint="#145FE8"
+          android:elevation="5dp"
+          android:text="DECODE"
+          android:textColor="#FFFFFF"
+          android:textSize="15sp"
+          android:textStyle="bold" />
+
+
+      <!-- DETECTION -->
+
+      <Button
+          android:id="@+id/btnDetection"
+          android:layout_width="match_parent"
+          android:layout_height="55dp"
+          android:layout_marginBottom="10dp"
+          android:backgroundTint="#145FE8"
+          android:elevation="5dp"
+          android:text="DETECTION"
+          android:textColor="#FFFFFF"
+          android:textSize="15sp"
+          android:textStyle="bold" />
+
+
+      <!-- RECOVERY -->
+
+      <Button
+          android:id="@+id/btnRecovery"
+          android:layout_width="match_parent"
+          android:layout_height="55dp"
+          android:layout_marginBottom="10dp"
+          android:backgroundTint="#145FE8"
+          android:elevation="5dp"
+          android:text="RECOVERY"
+          android:textColor="#FFFFFF"
+          android:textSize="15sp"
+          android:textStyle="bold" />
+
+
+      <!-- HISTORY -->
+
+      <Button
+          android:id="@+id/btnHistory"
+          android:layout_width="match_parent"
+          android:layout_height="55dp"
+          android:layout_marginBottom="10dp"
+          android:backgroundTint="#6B4CFF"
+          android:elevation="5dp"
+          android:text="HISTORY"
+          android:textColor="#FFFFFF"
+          android:textSize="15sp"
+          android:textStyle="bold" />
+
+
+      <!-- SHARE KEY -->
+
+      <Button
+          android:id="@+id/btnShareKey"
+          android:layout_width="match_parent"
+          android:layout_height="55dp"
+          android:layout_marginBottom="10dp"
+          android:backgroundTint="#6B4CFF"
+          android:elevation="5dp"
+          android:text="SHARE KEY"
+          android:textColor="#FFFFFF"
+          android:textSize="15sp"
+          android:textStyle="bold" />
+
+
+      <!-- RECEIVE KEY -->
+
+      <Button
+          android:id="@+id/btnReceiveKey"
+          android:layout_width="match_parent"
+          android:layout_height="55dp"
+          android:layout_marginBottom="8dp"
+          android:backgroundTint="#6B4CFF"
+          android:elevation="5dp"
+          android:text="RECEIVE KEY"
+          android:textColor="#FFFFFF"
+          android:textSize="15sp"
+          android:textStyle="bold" />
+
+    </LinearLayout>
+
+  </ScrollView>
+
+
+  <!-- LOGOUT -->
+
+  <Button
+      android:id="@+id/btnLogout"
+      android:layout_width="190dp"
+      android:layout_height="50dp"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginBottom="14dp"
+      android:backgroundTint="#D93636"
+      android:elevation="7dp"
+      android:text="LOGOUT"
+      android:textColor="#FFFFFF"
+      android:textSize="14sp"
+      android:textStyle="bold" />
+
+</RelativeLayout>
